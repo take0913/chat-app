@@ -1,4 +1,7 @@
 class RoomsController < ApplicationController
+  
+  def index
+  end
 
   def new
     @room = Room.new
@@ -12,7 +15,7 @@ class RoomsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-  
+
     private
 
     def room_params
